@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Summary</title>
 </head>
@@ -12,13 +13,18 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <nav class="nav">
+                <nav class="nav" id="nav">
                     <a class="nav__link active" href="#intro">Home</a>
                     <a class="nav__link" href="#about">About me</a>
                     <a class="nav__link" href="#skills">Skills</a>
                     <a class="nav__link" href="#portfolio">Portfolio</a>
                     <a class="nav__link" href="#contacts">Contacts</a>
                 </nav>
+
+                <button class="nav-toggle" id="nav__toggle" type="button">
+                    <span class="nav-toggle__item">Menu</span>
+                </button>
+
             </div>
         </div>
     </header>
@@ -32,6 +38,7 @@
                 <div class="intro__item intro__item_lang"><span class="lang_gray">RU</span> | ENG</div>
             </div>
             <img class="intro__photo" src="assets/img/intro_photo.jpg" alt="Photo Denis Novik">
+            <img class="intro__photo_2" src="assets/img/intro_photo_2.jpg" alt="Photo Denis Novik">
         </div>
     </div>
 
@@ -146,8 +153,7 @@
             <h2 class="portfolio__title">Portfolio</h2>
             <div class="portfolio__inner">
                 <div class="portfolio__item">
-                    <img class="portfolio__img" src="assets/img/portfolio_1.jpg" width="936px" height="510px"
-                        alt="photo online fashion store">
+                    <img class="portfolio__img" src="assets/img/portfolio_1.jpg" alt="photo online fashion store">
                     <a class="portfolio__name" href="#">Online fashion store - Homepage</a>
                 </div>
 
@@ -174,7 +180,7 @@
             <a class="btn btn__footer" href="#">Send message</a>
             <div class="footer__inner">
                 <div class="footer__item">
-                    <a class="footer__logo" href="#"><img  src="assets/img/footer_linkedIn.svg"></a>
+                    <a class="footer__logo" href="#"><img src="assets/img/footer_linkedIn.svg"></a>
                 </div>
                 <div class="footer__item">
                     <a href="#"><img class="footer__logo" src="assets/img/footer_inst.svg"></a>
@@ -193,6 +199,9 @@
         </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
