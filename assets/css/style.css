@@ -70,6 +70,12 @@ h6 {
 .header {
     padding-top: 33px;
     margin-bottom: 40px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 .header__inner {
@@ -81,6 +87,7 @@ h6 {
 .nav {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     padding-bottom: 32px;
     border-bottom: 1px solid #828282;
@@ -90,7 +97,7 @@ h6 {
 }
 
 .nav__link {
-    font-family: 'Gilroy-Medium';
+    font-family: 'Gilroy-Bold';
     font-weight: 400;
     font-size: 18px;
     line-height: 1.2;
@@ -184,9 +191,15 @@ h6 {
 }
 
 .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    
     width: 100%;
     min-height: 680px;
     position: relative;
+    
 }
 
 .intro__inner {
@@ -232,6 +245,7 @@ h6 {
     background-color: #F6F6F6;
     padding-top: 120px;
     padding-bottom: 107px;
+    margin-bottom: 91px;
 }
 
 .about__title {
@@ -249,7 +263,6 @@ h6 {
 }
 
 .skills {
-    margin-top: 91px;
     margin-bottom: 111px;
     display: flex;
     flex-direction: column;
@@ -274,6 +287,7 @@ h6 {
 
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -282,6 +296,8 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin-bottom: 80px;
 }
 
 .skills__icon {
@@ -472,12 +488,24 @@ h6 {
         position: absolute;
         top: 100%;
         left: 0;
+
     }
 
     .nav.active {
-        display: block;
+        display: flex;
         margin: 0;
-        padding: 8px 20px;
+
+        background-color: #ffffff;
+
+        border-bottom: none;
+        /* padding: 8px 20px; */
+    }
+
+    .nav__link {
+
+        width: 100%;
+        margin: 0;
+        padding: 33px 0 33px 13px;
     }
 
     .nav-toggle {
@@ -505,4 +533,27 @@ h6 {
     .skills__item:last-child {
         margin-bottom: 0;
     }
+
+    .intro {
+        margin-bottom: 83px;
+    }
+
+    .intro__inner {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .intro__item {
+        margin-bottom: 23px;
+    }
+
+    .intro__item_lang {
+        margin-top: 43px;
+    }
+
+    .intro__photo_2 {
+        margin: 0 auto;
+    }
+    
 }
